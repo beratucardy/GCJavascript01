@@ -1,0 +1,189 @@
+/* COMMON */
+:root {
+  --color1: black;
+  --color2: white;
+  --color3: #2441e7;
+  --color4: rgba(64, 57, 103);
+  --color5: #287691;
+  --color6: #17a2b8;
+  --color7: #3e849c;
+  --color8: #0a0a0a;
+  --color9: #2d2d2d;
+  --color10: #4e4e4e;
+}
+a {
+  text-decoration: none;
+  color: var(--color1) !important;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* TOPBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.navbar .navbar-brand img {
+  width: 300px;
+}
+
+.navbar ul li .account::before {
+  font: var(--fa-font-solid);
+  content: "\f007";
+  padding-right: 0.5rem;
+}
+.navbar .offcanvas {
+  background-color: var(--color8);
+}
+.navbar .kapali-menu1 {
+  text-align: center;
+  color: var(--color2);
+  background-color: var(--color9);
+  padding: 1.55rem 0 1.55rem 0;
+  border-bottom: 1px solid var(--color10);
+}
+.navbar .kapali-menu2 {
+  margin-top: 0.5rem;
+}
+.navbar .kapali-menu2::before {
+  font: var(--fa-font-solid);
+  content: "\f007";
+  padding-right: 0.5rem;
+  font-size: 12px;
+}
+.navbar .kapali-menu3::before {
+  font: var(--fa-font-solid);
+  content: "\f095";
+  padding-right: 0.5rem;
+  font-size: 12px;
+}
+.navbar .kapali-menu4::before {
+  font: var(--fa-font-solid);
+  content: "\f1d8";
+  padding-right: 0.5rem;
+  font-size: 12px;
+}
+.navbar .kapali-menu5::before {
+  font: var(--fa-font-solid);
+  content: "\f0a1";
+  padding-right: 0.5rem;
+  font-size: 12px;
+}
+.navbar .kapali-menu2,
+.navbar .kapali-menu3,
+.navbar .kapali-menu4,
+.navbar .kapali-menu5 {
+  display: inline-block !important;
+  color: var(--color2) !important;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.navbar .li-kapali-menu2,
+.navbar .li-kapali-menu3,
+.navbar .li-kapali-menu4,
+.navbar .li-kapali-menu5 {
+  border-top: 1px solid var(--color9);
+  border-bottom: 1px solid var(--color9);
+}
+.offcanvas {
+  width: 80vw !important;
+  min-width: 240px !important;
+  max-width: 440px !important;
+}
+/* MAİN */
+main {
+  background-image: url("../img/tecjpro-slider-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem 0;
+  position: relative;
+  z-index: 1;
+}
+main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color4);
+  opacity: 0.7;
+  z-index: -1;
+}
+main .btn-login {
+  border: 2px solid var(--color2);
+  color: var(--color2);
+  padding: 0.8rem 3rem;
+  transition: all 0.5s;
+}
+main .btn-login:hover {
+  background-color: var(--color2);
+  color: var(--color3);
+}
+/* FOOTER */
+/* FOOTER-START */
+.footer-start {
+  background-color: var(--color5);
+  padding: 5rem 0 5rem 0;
+}
+.footer-start .tel {
+  color: var(--color2) !important;
+}
+.footer-start .tel::before {
+  font: var(--fa-font-solid);
+  content: "\f095";
+  font-size: 12px;
+}
+.footer-start .wp {
+  color: var(--color2) !important;
+}
+.footer-start .fa-whatsapp {
+  font-size: 14px;
+}
+.footer-start .mail {
+  color: var(--color2) !important;
+}
+.footer-start .mail::before {
+  font: var(--fa-font-solid);
+  content: "\f0e0";
+}
+.footer-start .free-course {
+  text-align: left;
+  width: 200px;
+  margin-bottom: 0.1rem;
+}
+.footer-start .online-free-course {
+  text-align: left;
+  width: 200px;
+}
+.footer-start .free-course,
+.footer-start .online-free-course {
+  color: var(--color2);
+  border: 1px solid var(--color6);
+}
+.footer-start .free-course:hover,
+.footer-start .online-free-course:hover {
+  background-color: var(--color6);
+}
+/* FOOTER-END */
+.footer-end {
+  border-top: 1px solid var(--color7);
+  padding: 1rem 0 1rem 0;
+  background-color: var(--color5);
+}
+.footer-end img {
+  max-width: 25% !important;
+  height: auto !important;
+}
+@media (max-width: 768px) {
+  .footer-end img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+.footer-end .bad-coders {
+  padding-top: 3rem;
+}
+/* DARK LIGHT */
